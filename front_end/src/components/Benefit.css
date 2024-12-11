@@ -1,0 +1,16 @@
+.benefit {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px; 
+}
+
+.benefit-item img {
+  width: 40px; 
+  height: auto; 
+}
+
+.benefit-item p {
+  font-weight: bold;
+  color:#009900; 
+}
+

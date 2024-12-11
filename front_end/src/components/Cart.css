@@ -1,0 +1,152 @@
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 1300px;  
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.cart-table,
+.selected-products-table {
+    width: 70%;  
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;  
+}
+
+.selected-products-table {
+    width: 30%; 
+}
+
+h2, h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+/* Định dạng bảng giỏ hàng */
+.cart-table th,
+.selected-products-table th {
+    text-align: left;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #555;
+    font-size: 16px;
+}
+
+.cart-table td,
+.selected-products-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.cart-product {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-product button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-product button:hover {
+    background-color: whitesmoke;
+}
+
+.cart-product p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Checkbox */
+.checkbox {
+    margin: 0;
+}
+
+/* Sản phẩm đã chọn */
+.selected-products-table td img {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.selected-products-table p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.selected-products-table span {
+    color: #777;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Phần tổng tiền */
+.total-money {
+    font-size: 22px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cart-product p.remove {
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-product p.remove:hover {
+    text-decoration: underline;
+}
+.payment-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50; /* Màu nền xanh */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.payment-button:hover {
+    background-color: #45a049; 
+}
+
+.payment-button:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed;
+}

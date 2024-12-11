@@ -1,0 +1,336 @@
+.profile-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .profile-sidebar {
+    width: 250px;
+    background-color: #ffffff; 
+    padding: 20px;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-sidebar h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background-color: #00000075;
+    color: #fff;
+  }
+  
+  .tab-button:hover:not(.active) {
+    background-color: #e6e6e6;
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid #0059ff;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #0059ff;
+  }
+  
+  .logout-button:hover {
+    background-color: #447be0;
+    color: white;
+  }
+  
+
+  .profile-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-content h2,
+  .info-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .orders-content p,
+  .info-content p {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* CSS cho các button bộ lọc đơn hàng */
+.order-filters {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  flex: 1; 
+  padding: 10px 0;
+  text-align: center; 
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #f4f4f4;
+}
+
+.filter-button.active {
+  background-color: #529c30;
+  color: #fff;
+  border-color: #529c30;
+}
+
+/* CSS cho thông báo không có đơn hàng */
+.order-empty {
+  text-align: center;
+  margin-top: 50px;
+  color: #555;
+}
+
+.order-empty img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.order-empty p {
+  color: #000000;
+  font-size: 20px; 
+  font-weight: 600; 
+  margin-bottom: 5px; 
+}
+
+.order-empty span {
+  color: #919191;
+  font-size: 16px; 
+  font-weight: 400; 
+}
+
+
+.product-suggestions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-suggestions button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-suggestions button:hover {
+  background-color: #f4f4f4;
+}
+
+.back-home-button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #529c30;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #529c30;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-home-button:hover {
+  background-color: #529c30;
+  color: #ffffff;
+}
+
+/* Order filters */
+.order-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.order-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  color: #757575;
+}
+
+.order-empty p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Order list */
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  background: white;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.order-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+.order-item p:first-child {
+  font-weight: bold;
+  color: #367884;
+}
+
+/* Order details */
+.order-details {
+  background-color: #f9f9f9; /* Light gray background for order details */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+.order-details h3 {
+  font-size: 1.5rem;
+  color: #333; /* Darker color for the heading */
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.order-detail-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.order-detail-item p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.order-detail-item p:first-child {
+  font-weight: bold; 
+}
+
+.order-detail-item p:last-child {
+  color: #171414; 
+}
+.address-edit-container {
+  display: flex;
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  gap: 10px; /* Khoảng cách giữa input và các nút */
+}
+
+/* Căn chỉnh ô nhập địa chỉ */
+.address-edit-container input[type="text"] {
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  max-width: 300px; /* Giới hạn chiều ngang tối đa */
+  padding: 10px; /* Thêm khoảng cách bên trong */
+  border: 1px solid #ccc; /* Viền nhạt */
+  border-radius: 20px; /* Bo tròn */
+  font-size: 14px; /* Cỡ chữ */
+  outline: none; /* Xóa viền mặc định khi focus */
+  box-sizing: border-box; /* Bao gồm padding vào kích thước */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng focus */
+}
+
+/* Hiệu ứng khi focus vào ô nhập địa chỉ */
+.address-edit-container input[type="text"]:focus {
+  border-color: #007bff; /* Viền xanh */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Hiệu ứng ánh sáng */
+}
+
+/* Căn chỉnh nút */
+.address-edit-container .save-address-button,
+.address-edit-container .cancel-address-button {
+  padding: 8px 16px; /* Kích thước nút */
+  border-radius: 20px; /* Bo tròn nút */
+  border: none; /* Xóa viền */
+  font-size: 14px; /* Cỡ chữ */
+  cursor: pointer; /* Con trỏ chuột */
+}
+
+.save-address-button {
+  background-color: #28a745; /* Màu nền xanh lá */
+  color: white; /* Màu chữ trắng */
+}
+
+.save-address-button:hover {
+  background-color: #218838; /* Màu xanh đậm hơn khi hover */
+}
+
+.cancel-address-button {
+  background-color: #dc3545; /* Màu nền đỏ */
+  color: white; /* Màu chữ trắng */
+}
+
+.cancel-address-button:hover {
+  background-color: #c82333; 
+}
+.edit-address-button {
+  padding: 5px 10px; /* Tăng kích thước nút */
+  font-size: 14px; /* Cỡ chữ lớn hơn */
+  background-color: white; /* Nền màu trắng */
+  color: #007bff; /* Chữ màu xanh */
+  border: 2px solid #007bff; /* Viền màu xanh */
+  border-radius: 10px; /* Bo tròn */
+  cursor: pointer; /* Con trỏ chuột */
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi mượt */
+}
+
+.edit-address-button:hover {
+  background-color: #007bff; /* Nền màu xanh khi hover */
+  color: white; /* Chữ màu trắng khi hover */
+}

@@ -1,0 +1,576 @@
+
+
+.product-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #fbfbfb;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 44px;
+  color: #161d25;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.load-more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #b6e8a6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.load-more-btn:hover {
+  background-color: #2a9528;
+}
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.product-container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 260px; 
+  height: 400px; 
+  margin: 20px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%; 
+  height: 150px; 
+  object-fit: contain;
+  margin: 10px 0; 
+  border-bottom: 1px solid #e1e1e1; 
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: red;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.add-to-cart-btn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff; 
+  background-color: #B6E8A6; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+
+.add-to-cart-btn:hover {
+  background-color: #4CAF50; 
+  color: #ffffff; 
+}
+
+
+.add-to-cart-btn:active {
+  background-color: #3e8e41; 
+  transform: scale(0.95); 
+}
+
+.product-container:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Container sắp xếp sản phẩm */
+.sort-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Label cho dropdown */
+.sort-container label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  color: #333;
+}
+
+/* Dropdown sắp xếp */
+.sort-container select {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Dropdown khi hover */
+.sort-container select:hover {
+  border-color: #888;
+}
+
+
+/* Wrapper chính cho toàn bộ nội dung */
+.productDetailWrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  gap: 20px; 
+}
+
+/* Khung thông tin sản phẩm */
+.productDetailContent {
+  display: flex;
+  flex-direction: row; 
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px; 
+}
+
+/* Khung hình ảnh sản phẩm */
+.productImageWrapper {
+  flex: 1; 
+  padding: 20px;
+}
+
+.productImage {
+  max-width: 100%;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.productInfoWrapper {
+  flex: 2; 
+  padding: 20px;
+}
+
+.productTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.productCost {
+  font-size: 20px;
+  color: #e40004;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+.product-ratings {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  padding-left: 10px; 
+}
+
+.average-rating {
+  font-weight: bold;
+  align-items: flex-start; 
+}
+
+.total-comments {
+  font-style: italic;
+  color: #777;
+  margin-top: 4px; 
+}
+
+.product-ratings span {
+  color: #FFD700; 
+  margin-left: 3px; 
+}
+
+.productDescription {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.productOptions {
+  margin-bottom: 20px;
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.optionRow label {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.colorChoices {
+  display: flex;
+  gap: 10px;
+}
+
+.colorButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Nút hành động */
+.productActionButtons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.addToCartButton,
+.buyNowButton {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+  min-width: 150px;
+  max-width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.addToCartButton {
+  background-color: #dc5e1f;
+  color: white;
+}
+
+.addToCartButton:hover {
+  background-color: #c23b12;
+}
+
+.buyNowButton {
+  background-color: #2a9528;
+  color: white;
+}
+
+.buyNowButton:hover {
+  background-color: #14c51a;
+}
+
+.productDescriptionWrapper {
+  max-width: 1200px; 
+  width: 100%; 
+  padding: 20px; 
+  margin-top: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.productDescriptionWrapper h2 {
+  font-size: 1.8rem; 
+  margin-bottom: 15px; 
+  color: #333; 
+}
+
+.productDescriptionWrapper p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #555; 
+}
+
+@media (max-width: 768px) {
+  .productDetailContent {
+    flex-direction: column; 
+  }
+
+  .productImageWrapper {
+    text-align: center;
+  }
+
+  .productInfoWrapper {
+    text-align: center;
+  }
+
+  .productActionButtons {
+    flex-direction: column;
+  }
+}
+
+.comment-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto; /* Căn giữa và thêm khoảng cách */
+  padding: 20px;
+  background-color: #ffffff; /* Đồng nhất với sản phẩm */
+  border: 2px solid #ece8e8; /* Viền nhẹ */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+.comment-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.comment-textarea {
+  width: 97%;
+  height: 100px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #555;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  resize: none;
+}
+
+.comment-submit-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comment-submit-btn:hover {
+  background-color: #3e8e41;
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comment-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment-item-header p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin: 0;
+}
+
+.comment-item-header .comment-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.comment-item-content {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  text-align: left; /* Canh lề trái */
+  margin-bottom: 10px;
+}
+
+.delete-comment-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px; 
+  cursor: pointer;
+  font-size: 12px; 
+  transition: all 0.3s ease;
+  position: absolute; 
+  top: 50%; /* Center vertically */
+  right: 10px; /* Align to the right side with some padding */
+  transform: translateY(-50%); /* Adjust the vertical alignment to be centered */
+  width: auto; 
+  height: auto; 
+}
+
+.delete-comment-btn:hover {
+  background-color: #ff7875;
+}
+
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  font-size: 24px;
+  color: #d3d3d3; /* Màu sao chưa được chọn */
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.star.filled {
+  color: #FFD700; /* Màu vàng cho sao được chọn */
+}
+
+.similarProductsWrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: auto; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ece8e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; 
+}
+
+.similarProductsSlider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.similarProductCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Căn trái nội dung trong khung */
+  justify-content: space-between; /* Đưa nội dung đến hai đầu khung */
+  width: 120px;
+  height: 300px; /* Chiều cao cố định cho khung */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  background: #f9f9f9;
+  text-align: left; /* Căn lề trái mặc định */
+  position: relative; /* Dễ chỉnh sửa layout hơn */
+}
+
+.similarProductImage {
+  width: 100%; 
+  height: 150px;
+  object-fit: contain; 
+  margin-bottom: 10px;
+}
+
+.similarProductName {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  text-align: left; /* Căn trái */
+  margin-bottom: 10px;
+}
+
+.similarProductPrice {
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+  margin: 0 0 5px 0; /* Giữ giá cách đều với đánh giá */
+}
+
+.similarProductRatings {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+.product-rating,
+.product-comments {
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: left; 
+  width: 100%;
+  margin: 2px 0; 
+}
+
+
+.similarProductCard > .bottom-content {
+  margin-top: auto; 
+  width: 100%;
+}
+
+

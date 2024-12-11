@@ -1,0 +1,78 @@
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 97%;
+  background-color: #333; 
+  color: white;
+}
+
+
+.header-left .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 0 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background-color: transparent;
+}
+
+.search-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Phần bên phải (cart & profile) */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.login-text {
+  color: white;
+  font-size: 14px;
+}
+
+.login-text:hover {
+  color: #b6e8a3; 
+}
+
+.MuiBadge-badge {
+  background-color: #ff4d4f;
+}
